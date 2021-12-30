@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javaScript"> 
+        function validate()
+        {
+            var unam=document.getElementById("nam");
+            if(unam.value=="")
+            {
+                alert("enter the name")
+
+            }
+        }
+    </script>
+   
+    <title>validation</title>
+</head>
+<body>
+
+    <form action="msg.html" onsubmit="validate()">
+        <label>Name</label>
+        <input type="text" id="nam">
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

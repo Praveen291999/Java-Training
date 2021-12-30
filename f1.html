@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javaScript">
+        function GEEKFORGEEKS() {
+                var name = 
+                    document.forms["RegForm"]["Name"];
+                    if (name.value == "") {
+                    window.alert("Please enter your name.");
+                    name.focus();
+                    return false;
+                }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <form name="RegForm"
+              onsubmit="return GEEKFORGEEKS()" method="post">
+            <p>Name: <input type="text" 
+                            size="65" name="Name" /></p>
+            <br />
+            <input type="submit" 
+                       value="send" name="Submit" />
+          
+</body>
+</html>
